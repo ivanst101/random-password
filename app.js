@@ -29,6 +29,7 @@ img.addEventListener("click", ()=> {
     let copyText = document.getElementById("password")
     copyText.select()
 
+    // Access the system clipboard by using navigator.clipboard
     navigator.clipboard.writeText(copyText.value)
     alert("Copied to the clipboard!", copyText.value);
     copyText.value = ""
